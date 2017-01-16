@@ -434,4 +434,34 @@ angular.module('myApp')
   ]
 var sortProp = "";
 var sortDirection = "";
+
+$scope.propOptions= [{
+  label: 'Name',
+  value: 'name'
+ },
+ {
+  label: '#Friends',
+  value: 'friend_count'
+ },
+ {
+  label: 'City',
+  value: 'current_location.city'
+ },
+ {
+  label: 'State',
+  value: 'current_location.state'
+ },
+ {
+  label: 'Country',
+  value: 'current_location.country'
+ }]
+
+$scope.sortOptions= [{
+  label: 'Acending',
+  value: '+'
+},
+{
+  label: 'Decending',
+  value: '-'
+}]
 })
